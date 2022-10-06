@@ -3,8 +3,15 @@
 
 int max(int* numbers, int size)
 {
-    // Excercise 2
-    // Implement your code below...
-
-    return -1;
+//if statement to make sure that size is higher than 0, as stated in precondition//
+int x = numbers[0];
+if (size <= 0)  
+    abort(0);
+//Counter to find the highest number in the array//
+for (int c=0; c < size; c++)
+{
+    if (numbers[c] > x)
+        x = numbers[c];
+}
+    return x;
 }
