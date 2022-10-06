@@ -5,8 +5,7 @@ int max(int* numbers, int size)
 {
 //if statement to make sure that size is higher than 0, as stated in precondition//
 int x = numbers[0];
-if (size <= 0)  
-    abort(0);
+assert(size > 0);
 //Counter to find the highest number in the array//
 for (int c=0; c < size; c++)
 {

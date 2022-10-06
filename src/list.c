@@ -51,7 +51,7 @@ int largest(node *l){
       pre: head points to the first, empty element. The last element's next is NULL. size(l>0)
       post: returns the largest value of the list*/
      int x = l->data;
-//Counter to find the highest number in the array//
+//While loop, to count all until NULL, is detected.
     while(l!=NULL)
 {
     if (l->data > x)
